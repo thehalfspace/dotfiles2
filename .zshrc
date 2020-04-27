@@ -7,6 +7,9 @@ export ZSH="/Users/prithvithakur/.oh-my-zsh"
 # added by Miniconda3 4.3.21 installer
 export PATH="/Users/prithvithakur/miniconda3/bin:$PATH"
 
+# Modify TERM for lightline color
+export TERM=xterm-256color
+
 # tmux default
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
