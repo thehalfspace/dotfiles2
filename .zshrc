@@ -7,6 +7,11 @@ export ZSH="/Users/prithvithakur/.oh-my-zsh"
 # added by Miniconda3 4.3.21 installer
 export PATH="/Users/prithvithakur/miniconda3/bin:$PATH"
 
+# tmux default
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
