@@ -6,6 +6,7 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'vim-scripts/wombat256.vim'
 Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -22,7 +23,10 @@ set shiftwidth=4
 set expandtab
 
 syntax on
-"filetype plugin inndent on
+filetype plugin indent on
+
+" Short esc key timeout
+set timeoutlen=1000 ttimeoutlen=0
 
 " More natural split opening
 set splitbelow
@@ -30,7 +34,6 @@ set splitright
 
 set nu
 set cursorline
-"set cursorcolumn
 set ruler
 set ignorecase
 set smartcase
@@ -58,7 +61,14 @@ nnoremap <C-H> <C-W><C-H>
 " Lightline colorscheme
 let g:lightline = {
       \ 'colorscheme': 'wombat',
-      \}
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ }
 
 " ===== tmuxline =====
 let g:tmuxline_powerline_separators = 0

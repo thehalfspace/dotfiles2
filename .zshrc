@@ -10,10 +10,10 @@ export PATH="/Users/prithvithakur/miniconda3/bin:$PATH"
 # Modify TERM for lightline color
 export TERM=xterm-256color
 
-# tmux default
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux
-fi
+# uncomment if you want to make tmux default
+#if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+#  exec tmux
+#fi
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -114,6 +114,7 @@ alias dizhi='ssh prith@dizhi.earth.lsa.umich.edu'
 alias wozhi='ssh -X prith@wozhi.earth.lsa.umich.edu'
 #alias sam='ssh prith@141.211.197.212'
 alias imac='ssh prith@35.1.109.167'
+alias icloud='cd ~/Library/Mobile\ Documents/com\~apple\~CloudDocs'
 
 # Julia path
 # Use this if you installed julia using dmg
