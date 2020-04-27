@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'edkolev/tmuxline.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'vim-scripts/wombat256.vim'
+Plug 'scrooloose/nerdcommenter'
 
 call plug#end()
 
@@ -60,9 +61,23 @@ let g:lightline = {
       \}
 
 " ===== tmuxline =====
-" " Remove separators
 let g:tmuxline_powerline_separators = 0
+" let g:tmuxline_preset = 'nightly_fox'
 
+" Set leader as ,
+let mapleader=","
 
-" tmuxline.vim plugin
-" Tmuxline lightline
+"-------------------
+" Nercommenter stuff
+" ------------------
+filetype plugin on
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multiline comments
+let g:NERDCompactSexyComs = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+
