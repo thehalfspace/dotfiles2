@@ -1,14 +1,14 @@
 # Create symbolic links: Run this when cloning into new machine
 
-if [-f ~/.alacritty.yml]
+if [ -f ~/.alacritty.yml ]; then
     rm ~/.alacritty.yml
 fi
 
-if [-f ~/.vimrc]
+if [ -f ~/.vimrc ]; then
     rm ~/.vimrc
 fi
 
-if [-f ~/.tmux.conf]
+if [ -f ~/.tmux.conf ]; then
     rm ~/.tmux.conf
 fi
 
