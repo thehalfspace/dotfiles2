@@ -1,5 +1,20 @@
 # My personal configuration for vim + tmux + zsh on (alacritty) mac
 
+List of files:
+``` zsh
+    
+install_dependencies.sh # install zsh, oh-my-zsh, tmux, vim-plug. Try to update vim to
+                        # to 8.0 prior to runnig this.
+
+symlink.sh              # create symbolic links for rc files
+
+.vimrc                  # settings for vim
+.zshrc                  # settings for zsh (and oh-my-zsh)
+.alacritty.yml          # settings for alacritty
+
+```
+
+
 **Terminal emulator:** I use [alacritty](https://github.com/alacritty/alacritty) which boasts of being super lightweight and the fastest terminal emulator in existence. I have very very minor configs in .alacritty.yml mostly to change the font size and fullscreen behavior of the terminal.
 
 **tmux:** I honestly don't like tmux because of it's clunky key bindings, but it is very useful for me especially when I want to work on multiple remote machines from my laptop. I've tried to not overload it with a whole lot of stuff, below are the basic commands and the key bindings that I use:
