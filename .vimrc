@@ -3,10 +3,13 @@ call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins
 Plug 'edkolev/tmuxline.vim'
-
 Plug 'itchyny/lightline.vim'
+Plug 'vim-scripts/wombat256.vim'
 
 call plug#end()
+
+" Colorscheme
+color wombat256mod
 
 " show existing tab with 4 spaces width
 set tabstop=4
@@ -17,9 +20,6 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 
-" Colorscheme
-" set background=dark
-
 syntax on
 "filetype plugin inndent on
 
@@ -29,7 +29,7 @@ set splitright
 
 set nu
 set cursorline
-set cursorcolumn
+"set cursorcolumn
 set ruler
 set ignorecase
 set smartcase
@@ -58,6 +58,11 @@ nnoremap <C-H> <C-W><C-H>
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \}
+
+" ===== tmuxline =====
+" " Remove separators
+let g:tmuxline_powerline_separators = 0
+
 
 " tmuxline.vim plugin
 " Tmuxline lightline
