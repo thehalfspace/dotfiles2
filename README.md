@@ -1,5 +1,7 @@
 # My personal configuration for vim + tmux + zsh on (alacritty) mac
 
+Make sure you have vim version > 8.0 and tmux version > 2.0. For some linux systems, you might have to compile tmux from source. Also note that the `install _dependencies.sh` is designed for mac os using homebrew. Change it to relevant commands (apt-get/yum/etc) for other operating systems.
+
 List of files:
 ``` zsh
     
