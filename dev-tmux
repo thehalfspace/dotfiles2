@@ -1,0 +1,6 @@
+#!/bin/sh
+tmux new -s $1 -d -x $(tput cols) -y $(tput lines)
+tmux split-window -v -p 85
+tmux split-window -h -p 30
+tmux send-keys -t 0 'htop' C-m
+tmux attach -t $1
