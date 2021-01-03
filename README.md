@@ -16,6 +16,7 @@ symlink.sh              # create symbolic links for rc files
 
 ```
 
+Install wombat256mod colorscheme after running `install_dependencies.sh`.
 
 **Terminal emulator:** I use [alacritty](https://github.com/alacritty/alacritty) which boasts of being super lightweight and the fastest terminal emulator in existence. I have very very minor configs in .alacritty.yml mostly to change the font size and fullscreen behavior of the terminal.
 
