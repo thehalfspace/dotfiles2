@@ -2,13 +2,13 @@
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins
-Plug 'edkolev/tmuxline.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'vim-scripts/wombat256.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-fugitive'
 Plug 'jiangmiao/auto-pairs'
 Plug 'JuliaEditorSupport/julia-vim'
+Plug 'edkolev/tmuxline.vim'
 
 call plug#end()
 
