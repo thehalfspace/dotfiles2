@@ -74,7 +74,7 @@ let g:lightline = {
 
 " ===== tmuxline =====
 let g:tmuxline_powerline_separators = 0
-" let g:tmuxline_preset = 'nightly_fox'
+let g:tmuxline_preset = 'nightly_fox'
 
 " Set leader as ,
 let mapleader=","

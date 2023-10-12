@@ -5,26 +5,24 @@ Make sure you have vim version > 8.0 and tmux version > 2.0. For some linux syst
 List of files:
 ``` zsh
     
-install_dependencies.sh # install zsh, oh-my-zsh, tmux, vim-plug. Try to update vim to
-                        # to 8.0 prior to runnig this.
+install_dependencies.sh # install zsh, oh-my-zsh, tmux, vim-plug. 
 
 symlink.sh              # create symbolic links for rc files
 
 .vimrc                  # settings for vim
 .zshrc                  # settings for zsh (and oh-my-zsh)
-.alacritty.yml          # settings for alacritty
+tmuxline_snapshot       # snapshot of tmuxline status bar to be sourced by .tmux.conf file 
 
 ```
 
-Install wombat256mod colorscheme after running `install_dependencies.sh`.
-
-**Terminal emulator:** I use [alacritty](https://github.com/alacritty/alacritty) which boasts of being super lightweight and the fastest terminal emulator in existence. I have very very minor configs in .alacritty.yml mostly to change the font size and fullscreen behavior of the terminal.
+**Terminal emulator:** I use [kitty](https://sw.kovidgoyal.net/kitty/) which boasts of being super lightweight and fast.
 
 **tmux:** I honestly don't like tmux because of it's clunky key bindings, but it is very useful for me especially when I want to work on multiple remote machines from my laptop. I've tried to not overload it with a whole lot of stuff, below are the basic commands and the key bindings that I use:
 ```
 tmux new -s <name>  # new session
 tmux a -t <name>    # attach session
 <C-a> d             # detach session
+tmux ls             # list all sessions
 
 tmux kill-session -t <name> # kill session (I just use C-d)
 

@@ -1,3 +1,5 @@
+# Do these manually one-by-one
+
 # change brew to yum/apt for linux systems
     # lot of caveats with rhel, check vim version (> 8.0) and tmux version (>2.0) 
 # brew install zsh
