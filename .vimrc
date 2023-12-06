@@ -10,6 +10,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'edkolev/tmuxline.vim'
 Plug 'fladson/vim-kitty'
+Plug 'preservim/nerdtree'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 call plug#end()
 
@@ -94,3 +96,16 @@ let g:NERDCompactSexyComs = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
+"---------------------
+"Nerdtree preferences
+"---------------------
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
+" Start NERDTree and put the cursor back in the other window.
+" autocmd VimEnter * NERDTree | wincmd p
+
+" Set NERDTree window size
+let g:NERDTreeWinSize=25
