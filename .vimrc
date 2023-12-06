@@ -9,6 +9,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'jiangmiao/auto-pairs'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'edkolev/tmuxline.vim'
+Plug 'fladson/vim-kitty'
 
 call plug#end()
 
