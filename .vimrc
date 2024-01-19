@@ -2,13 +2,14 @@
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins
-Plug 'itchyny/lightline.vim'
+"Plug 'itchyny/lightline.vim'
 Plug 'vim-scripts/wombat256.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-fugitive'
 Plug 'jiangmiao/auto-pairs'
 Plug 'JuliaEditorSupport/julia-vim'
-Plug 'edkolev/tmuxline.vim'
+" Plug 'edkolev/tmuxline.vim'
+Plug 'vim-airline/vim-airline'
 Plug 'fladson/vim-kitty'
 Plug 'preservim/nerdtree'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
@@ -76,8 +77,12 @@ let g:lightline = {
       \ }
 
 " ===== tmuxline =====
-let g:tmuxline_powerline_separators = 0
-let g:tmuxline_preset = 'nightly_fox'
+"let g:tmuxline_powerline_separators = 0
+"let g:tmuxline_preset = 'nightly_fox'
+
+" =======vim-airline=====
+let g:airline_section_b = '%{strftime("%c")}'
+let g:airline_section_y = 'BN: %{bufnr("%")}'
 
 " Set leader as ,
 let mapleader=","
