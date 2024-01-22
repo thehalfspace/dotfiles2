@@ -53,8 +53,6 @@ and the following plugins:
 
 [vim-fugitive](https://github.com/tpope/vim-fugitive): An awesome git wrapper. I only use this because I like to see the branch name on my statusline. I do other git stuff outside vim.
 
-[tmuxline](https://github.com/edkolev/tmuxline.vim): Make the tmux statusline of the same colorscheme as lightline.
-
 [wombat256.vim](https://github.com/vim-scripts/wombat256.vim): code colorscheme
 
 [auto-pairs](https://github.com/jiangmiao/auto-pairs): open/close braces/quotes in pairs.
