@@ -5,7 +5,7 @@ Make sure you have vim version > 8.0 and tmux version > 2.0. For some linux syst
 List of files:
 ``` zsh
     
-install_dependencies.sh # install zsh, oh-my-zsh, tmux, vim-plug. 
+install_dependencies.sh # install zsh, oh-my-zsh, tmux, vim-plug. I use `alanpeabody` theme for oh-my-zsh. 
 
 symlink.sh              # create symbolic links for rc files
 
