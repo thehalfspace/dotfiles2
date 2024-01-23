@@ -15,4 +15,5 @@ fi
 
 ln -s ~/dotfiles2/.vimrc ~/.vimrc
 ln -s ~/dotfiles2/.tmux.conf ~/.tmux.conf
+ln -s ~/dotfiles2/faster-git.sh ~/faster-git.sh
 # ln -s ~/dotfiles2/tmux_lightline ~/tmux_lightline
