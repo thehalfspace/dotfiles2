@@ -2,17 +2,18 @@
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins
-"Plug 'itchyny/lightline.vim'
 Plug 'vim-scripts/wombat256.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-fugitive'
 Plug 'jiangmiao/auto-pairs'
 Plug 'JuliaEditorSupport/julia-vim'
-" Plug 'edkolev/tmuxline.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'fladson/vim-kitty'
 Plug 'preservim/nerdtree'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+
+" Plug 'davidhalter/jedi-vim'
+" Plug 'ycm-core/YouCompleteMe', {'do': './install.py --clangd-completer --ts-completer'}
 
 call plug#end()
 
