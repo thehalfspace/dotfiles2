@@ -47,6 +47,9 @@ set smartcase
 set hlsearch
 set wildmenu
 
+" Set syntax highlighting for markdown
+let g:markdown_fenced_languages = ['html', 'py=python', 'sh=bash', 'julia', ]
+
 " for lightline
 set laststatus=2
 if !has('gui_running')
@@ -114,4 +117,4 @@ nnoremap <C-f> :NERDTreeFind<CR>
 " autocmd VimEnter * NERDTree | wincmd p
 
 " Set NERDTree window size
-let g:NERDTreeWinSize=25
+let g:NERDTreeWinSize=20
