@@ -48,7 +48,7 @@ set hlsearch
 set wildmenu
 
 " Set syntax highlighting for markdown
-let g:markdown_fenced_languages = ['html', 'py=python', 'sh=bash', 'julia', ]
+let g:markdown_fenced_languages = ['html', 'py=python', 'sh=bash', 'julia', 'c', 'cpp']
 
 " for lightline
 set laststatus=2
