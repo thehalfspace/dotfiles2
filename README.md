@@ -1,19 +1,29 @@
-# My personal configuration for vim + tmux + zsh on macOS
+# My personal portable configuration for vim + tmux + zsh on macOS/Linux
 
 Make sure you have vim version > 8.0 and tmux version > 2.0. For some linux systems, you might have to compile tmux from source. Also note that the `install _dependencies.sh` is designed for mac os using homebrew. Change it to relevant commands (apt-get/yum/etc) for other operating systems.
 
 List of files:
 ``` zsh
     
-install_dependencies.sh # install zsh, oh-my-zsh, tmux, vim-plug. I use `alanpeabody` theme for oh-my-zsh. 
+install_dependencies.sh # install zsh, oh-my-zsh, tmux, vim-plug. 
 
 symlink.sh              # create symbolic links for rc files
 
 .vimrc                  # settings for vim
 .zshrc                  # settings for zsh (and oh-my-zsh)
 tmuxline_snapshot       # snapshot of tmuxline status bar to be sourced by .tmux.conf file 
-
+robbyrussell-theme-add-user-prompt.md   # Add custom user prompt to robbyrussell theme in oh-my-zsh.
+faster-git.sh           # oh-my-zsh is sometimes very slow for large git repositories,
+# just run `sh ~/faster-git.sh` from any repositories to disable automatic query of git commits.
 ```
+**NOTE**: Please manually check aliases in my `.zshrc` if you want to use the same one.
+Steps to install:
+- Clone the repository
+- For a linux system, go to the `install_dependencies.sh` and install stuff as relevant to your system. For mac with homebrew, you can just do `sh install_dependencies.sh`.
+- Create symlinks: run `sh symlink.sh`. 
+- Open any file with vim and run `:PlugInstall` to install vim plugins.
+- You should be all set.
+
 
 **Terminal emulator:** I use [kitty](https://sw.kovidgoyal.net/kitty/) which boasts of being super lightweight and fast.
 
@@ -43,6 +53,8 @@ nnoremap ; :    # don't need to press shift in normal mode
 
 C-h,j,k,l       # navigation b/w splits: not really needed unless you have nerdtree
 
+,nn             # toggle nerdtree window
+
 ```
 
 and the following plugins:
@@ -56,6 +68,8 @@ and the following plugins:
 [wombat256.vim](https://github.com/vim-scripts/wombat256.vim): code colorscheme
 
 [auto-pairs](https://github.com/jiangmiao/auto-pairs): open/close braces/quotes in pairs.
+
+[nerdtree](https://github.com/preservim/nerdtree): for sidebar.
 
 [julia-vim](https://github.com/JuliaEditorSupport/julia-vim): I need this for julia syntax highlighting and latex-unicode conversion.
 
