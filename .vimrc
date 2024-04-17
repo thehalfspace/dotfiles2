@@ -48,7 +48,7 @@ set hlsearch
 set wildmenu
 
 " Set syntax highlighting for markdown
-let g:markdown_fenced_languages = ['html', 'py=python', 'sh=bash', 'julia', 'c', 'cpp']
+let g:markdown_fenced_languages = ['html', 'py=python', 'sh=bash', 'julia', 'c', 'cpp', 'rust']
 
 " for lightline
 set laststatus=2
@@ -114,7 +114,7 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
 " Start NERDTree and put the cursor back in the other window.
-" autocmd VimEnter * NERDTree | wincmd p
+autocmd VimEnter * NERDTree | wincmd p
 
 " Set NERDTree window size
 let g:NERDTreeWinSize=20
