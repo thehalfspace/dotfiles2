@@ -11,7 +11,6 @@ symlink.sh              # create symbolic links for rc files
 
 .vimrc                  # settings for vim
 .zshrc                  # settings for zsh (and oh-my-zsh)
-tmuxline_snapshot       # snapshot of tmuxline status bar to be sourced by .tmux.conf file 
 robbyrussell-theme-add-user-prompt.md   # Add custom user prompt to robbyrussell theme in oh-my-zsh.
 faster-git.sh           # oh-my-zsh is sometimes very slow for large git repositories,
 # just run `sh ~/faster-git.sh` from any repositories to disable automatic query of git commits.
@@ -22,6 +21,7 @@ Steps to install:
 - For a linux system, go to the `install_dependencies.sh` and install stuff as relevant to your system. For mac with homebrew, you can just do `sh install_dependencies.sh`.
 - Create symlinks: run `sh symlink.sh`. 
 - Open any file with vim and run `:PlugInstall` to install vim plugins.
+- Open a new tmux session and use `Ctrl-a Shift+U` to install/update tmux plugins.
 - You should be all set.
 
 
