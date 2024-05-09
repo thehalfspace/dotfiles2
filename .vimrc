@@ -50,12 +50,6 @@ set wildmenu
 " Set syntax highlighting for markdown
 let g:markdown_fenced_languages = ['html', 'py=python', 'sh=bash', 'julia', 'c', 'cpp', 'rust']
 
-" for lightline
-set laststatus=2
-if !has('gui_running')
-      set t_Co=256
-endif
-
 " change semi colon to colon in normal mode
 nnoremap ; :
 
@@ -67,22 +61,6 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-
-" Lightline colorscheme
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'FugitiveHead'
-      \ },
-      \ }
-
-" ===== tmuxline =====
-"let g:tmuxline_powerline_separators = 0
-"let g:tmuxline_preset = 'nightly_fox'
 
 " =======vim-airline=====
 let g:airline_section_b = '%{strftime("%c")}'
