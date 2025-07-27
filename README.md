@@ -1,5 +1,7 @@
 # My personal portable configuration for vim + tmux + zsh on macOS/Linux
 
+I'm trying to use more modern tools now. [Here is the updated config repo](https://github.com/thehalfspace/hayloft). I feel old and out of touch with technology haha!
+
 Make sure you have vim version > 8.0 and tmux version > 2.0. For some linux systems, you might have to compile tmux from source. Also note that the `install _dependencies.sh` is designed for mac os using homebrew. Change it to relevant commands (apt-get/yum/etc) for other operating systems.
 
 List of files:
